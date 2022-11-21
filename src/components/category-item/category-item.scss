@@ -1,0 +1,44 @@
+.category-container {
+  min-width: 30%;
+  height: 240px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 7.5px 15px;
+
+  &:hover {
+    cursor: pointer;
+
+    & .category-body-container {
+      opacity: 0.9;
+    }
+  }
+
+  &.large {
+    height: 380px;
+  }
+
+  .category-body-container {
+    text-align: center;
+    background-color: white;
+    opacity: 0.6;
+    padding: 0 35px;
+
+
+    h2 {
+      color: black;
+      margin: 4px 6px 0;
+    }
+
+    p {
+      color: black;
+      border: 1px solid black;
+      padding: 5px 12px;
+      font-size: 16px;
+      letter-spacing: 0.1rem;
+    }
+  }
+
+}
