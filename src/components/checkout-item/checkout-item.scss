@@ -1,0 +1,15 @@
+.checkout-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid black;
+  padding: 15px 0;
+
+  img {
+    width: 100%;
+  }
+
+  .checkout-quantity {
+    margin: 0 10px;
+  }
+}
