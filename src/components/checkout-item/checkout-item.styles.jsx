@@ -1,4 +1,6 @@
-.checkout-item-container {
+import styled from "styled-components";
+
+export const CheckoutItemContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -8,8 +10,8 @@
   img {
     width: 100%;
   }
+`
 
-  .checkout-quantity {
-    margin: 0 10px;
-  }
-}
+export const CheckoutQuantity = styled.span`
+  margin: 0 10px;
+`

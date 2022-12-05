@@ -1,4 +1,4 @@
-import "./checkout-item.scss";
+import {CheckoutItemContainer, CheckoutQuantity } from "./checkout-item.styles";
 import { useContext } from "react";
 import { CartContext } from "../../contexts/cart.context";
 
@@ -13,13 +13,13 @@ const CheckoutItem = ({checkoutItem}) => {
   const decreaseItemQuantity = () => decreaseQuantity(checkoutItem);
 
   return (
-    <div className="checkout-item-container">
+    <CheckoutItemContainer>
       <img src={imageUrl} alt={`${name}`} />
       <span>{name}</span>
-      <div><i className="fa-solid fa-circle-chevron-left" onClick={decreaseItemQuantity} ></i><span className="checkout-quantity">{quantity}</span><i className="fa-solid fa-circle-chevron-right" onClick={addQuantity}></i></div>
+      <div><i className="fa-solid fa-circle-chevron-left" onClick={decreaseItemQuantity} ></i><CheckoutQuantity>{quantity}</CheckoutQuantity><i className="fa-solid fa-circle-chevron-right" onClick={addQuantity}></i></div>
       <span>£{price}</span>
       <i className="fa-solid fa-x" onClick={removeItem}></i>
-    </div>
+    </CheckoutItemContainer>
   )
 
 }
