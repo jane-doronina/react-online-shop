@@ -32,9 +32,9 @@ const PaymentForm = () => {
       return res.json();
     });
 
-    const client_secret = response.paymentIntent.client_secret
+    const clientSecret = response.paymentIntent.client_secret
 
-    const paymentResult = await stripe.confirmCardPayment(client_secret, {
+    const paymentResult = await stripe.confirmCardPayment(clientSecret, {
       payment_method: {
         card: elements.getElement(CardElement),
         billing_details: {
@@ -43,15 +43,13 @@ const PaymentForm = () => {
       }
     })
 
-    console.log(paymentResult);
-
     setIsProcessingPayment(false);
 
     if(paymentResult.error) {
-      alert(paymentResult.error);
+      alert(paymentResult.error.message);
     } else {
-      if(paymentResult.paymentIntent.status === "succeded") {
-        alert("payment successful");
+      if(paymentResult.paymentIntent.status === "succeeded") {
+        alert("Payment successful");
       }
     }
   }
