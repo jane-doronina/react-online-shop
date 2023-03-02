@@ -43,6 +43,8 @@ const PaymentForm = () => {
       }
     })
 
+    console.log(paymentResult);
+
     setIsProcessingPayment(false);
 
     if(paymentResult.error) {
