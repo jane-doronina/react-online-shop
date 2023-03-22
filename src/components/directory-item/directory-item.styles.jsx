@@ -9,50 +9,57 @@ export const BackgroundImage = styled.div`
 `;
 
 export const CategoryBody = styled.div`
-  height: 90px;
-  padding: 0 25px;
+  height: auto;
+  width: auto;
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
   background-color: white;
-  opacity: 0.7;
   position: absolute;
+  color: black;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
 
   h2 {
     font-weight: bold;
     margin: 0 6px 0;
-    font-size: 22px;
-    color: #4a4a4a;
+    font-size: 18px;
+
     text-transform: uppercase;
   }
 
   p {
     font-weight: lighter;
     font-size: 16px;
+    margin: 5px 0;
   }
 `;
 
 export const DirectoryItemContainer = styled.div`
   min-width: 30%;
-  height: 240px;
+  height: 300px;
   flex: 1 1 auto;
+  grid-column: auto / span 2;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid black;
-  margin: 0 7.5px 15px;
   overflow: hidden;
+
+  &:nth-child(n + 4) {
+    grid-column: auto / span 3;
+    height: 330px;
+  }
 
   &:hover {
     cursor: pointer;
     ${BackgroundImage} {
       transform: scale(1.1);
       transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
-    }
-    ${CategoryBody} {
-      opacity: 0.9;
     }
   }
 `;

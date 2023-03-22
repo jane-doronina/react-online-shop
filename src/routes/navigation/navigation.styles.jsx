@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { LinkWithHover } from "../../components/footer/footer.styles";
 
 export const NavigationContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 50px;
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
+  padding: 0 40px;
 `
 
 export const LogoContainer = styled.div`
@@ -27,7 +27,8 @@ export const NavLinks = styled.div`
   justify-content: flex-end;
 `
 
-export const NavLink = styled(Link)`
+export const NavLink = styled(LinkWithHover)`
+  font-weight: 400;
   cursor: pointer;
   margin-left: 20px;
 `

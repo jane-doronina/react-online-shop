@@ -5,6 +5,7 @@ export const CategoryContainer = styled.div`
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-top: 20px;
+  padding: 20px 40px;
 `
 export const Title = styled.h2`
   text-transform: uppercase;
