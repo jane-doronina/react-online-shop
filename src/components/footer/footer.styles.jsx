@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const FooterContainer = styled.div`
   background: black;
@@ -11,7 +12,7 @@ export const FooterContainer = styled.div`
   display: flex;
 `
 
-export const LinkWithHover = styled.a`
+export const LinkWithHover = styled(Link)`
   color: ${(props) => props.color || "black"};
   font-weight: 300;
   display: inline-block;

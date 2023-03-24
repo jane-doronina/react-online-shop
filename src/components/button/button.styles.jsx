@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const BaseButton = styled.button`
-  min-width: 165px;
+  min-width: 130px;
   width: auto;
   height: 50px;
   margin: 0 auto;
   line-height: 50px;
+  letter-spacing: 0.03rem;
   padding: 0 30px;
   font-size: 14px;
   background-color: black;
@@ -30,6 +31,11 @@ export const GoogleSignInButton = styled(BaseButton)`
   background-color: #4285f4;
   color: white;
 
+  .fa-brands {
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+
   &:hover {
     background-color: #357ae8;
     border: none;
@@ -39,7 +45,6 @@ export const GoogleSignInButton = styled(BaseButton)`
 export const InvertedButton = styled(BaseButton)`
   background-color: white;
   color: black;
-  border: 1px solid black;
 
   &:hover {
     background-color: black;
@@ -57,6 +62,7 @@ export const SpinnerContainer = styled.div`
   border-top-color: #636767;
   animation: spin 1s ease-in-out infinite;
   -webkit-animation: spin 1s ease-in-out infinite;
+
   @keyframes spin {
     to {
       -webkit-transform: rotate(360deg);

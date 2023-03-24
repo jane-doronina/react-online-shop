@@ -3,7 +3,6 @@ import { Fragment } from "react";
 import { useSelector } from "react-redux";
 
 import { NavigationContainer, LogoContainer, Logo, NavLinks, NavLink} from "./navigation.styles";
-import { LinkWithHover } from "../../components/footer/footer.styles";
 import { signOutUser } from "../../utils/firebase/firebase";
 import CartIcon from "../../components/cart-icon/cart-icon";
 import CartDropdown from "../../components/cart-dropdown/cart-dropdown";

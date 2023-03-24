@@ -16,10 +16,8 @@ export const ProductCardContainer = styled.div`
   }
 
   button {
-    width: 80%;
-    opacity: 0.7;
     position: absolute;
-    top: 255px;
+    bottom: 20%;
     display: none;
   }
 
@@ -29,7 +27,6 @@ export const ProductCardContainer = styled.div`
     }
 
     button {
-      opacity: 0.85;
       display: flex;
     }
   }
@@ -38,14 +35,14 @@ export const Footer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-size: 18px;
-  padding: 15px;
+  padding: 5px 0 15px;
 `
 export const Name = styled.span`
-  width: 90%;
-  margin-bottom: 15px;
+  font-size: 1rem;
 `
 
 export const Price = styled.span`
-  width: 10%;
+  font-size: 0.9rem;
 `

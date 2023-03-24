@@ -11,16 +11,17 @@ const Checkout = () => {
 
   return (
     <CheckoutContainer>
-      <CheckoutHeadings>
+      {/* <CheckoutHeadings>
         <span>Product</span>
         <span>Description</span>
         <span>Quantity</span>
         <span>Price</span>
         <span>Remove</span>
-      </CheckoutHeadings>
+      </CheckoutHeadings> */}
+      <h3>Your shopping bag</h3>
       {cartItems.map((item) => <CheckoutItem key={item.id} checkoutItem={item}/>)}
       <TotalPrice>
-        <span>TOTAL: ${cartTotal}</span>
+        <span>TOTAL: {cartTotal} GBP</span>
       </TotalPrice>
       <PaymentForm />
     </CheckoutContainer>
