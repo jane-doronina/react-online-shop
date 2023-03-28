@@ -14,9 +14,9 @@ const CheckoutItem = ({checkoutItem}) => {
   return (
     <CheckoutItemContainer>
       <img src={imageUrl} alt={`${name}`} />
-      <span>{name}</span>
-      <div><i className="fa-solid fa-circle-chevron-left" onClick={decreaseItemQuantity} ></i><CheckoutQuantity>{quantity}</CheckoutQuantity><i className="fa-solid fa-circle-chevron-right" onClick={addQuantity}></i></div>
-      <span>£{price}</span>
+      <span className="product-name">{name}</span>
+      <div className="quantity"><i class="fa-solid fa-circle-minus" onClick={decreaseItemQuantity} ></i><CheckoutQuantity>{quantity}</CheckoutQuantity><i class="fa-solid fa-circle-plus" onClick={addQuantity}></i></div>
+      <span className="price">£{price}</span>
       <i className="fa-solid fa-circle-xmark" onClick={removeItem}></i>
     </CheckoutItemContainer>
   )

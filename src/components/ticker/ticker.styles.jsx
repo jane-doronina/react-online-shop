@@ -55,5 +55,7 @@ export const TickerItem = styled.div`
 
   @media screen and (max-width: 600px) {
     width: 150%;
+    padding: 7px;
+    font-size: 0.9rem;
   }
 `

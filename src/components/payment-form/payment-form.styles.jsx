@@ -10,13 +10,17 @@ margin-top: 20px;
 `
 
 export const FormContainer = styled.form`
-min-width: 500px;
+  min-width: 500px;
 
- h2 {
-  margin-bottom: 30px;
- }
+  h2 {
+    margin-bottom: 30px;
+  }
 
- button {
-  margin-top: 20px;
- }
+  button {
+    margin-top: 20px;
+  }
+
+  @media screen and (max-width: 500px) {
+    min-width: unset;
+  }
 `

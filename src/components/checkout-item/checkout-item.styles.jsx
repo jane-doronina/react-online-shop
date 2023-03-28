@@ -15,11 +15,28 @@ export const CheckoutItemContainer = styled.div`
 
   @media screen and (max-width: 600px) {
     display: flex;
+    justify-content: space-between;
 
     img {
       width: 20%;
       height: 90px;
       object-fit: cover;
+    }
+
+    .product-name {
+      width: 25%;
+    }
+
+    .quantity {
+      width: 20%;
+    }
+
+    .price {
+      width: 10%;
+    }
+
+    .fa-circle-xmark {
+      width: 5%;
     }
   }
 `
