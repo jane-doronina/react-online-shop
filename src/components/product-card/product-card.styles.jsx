@@ -33,6 +33,11 @@ export const ProductCardContainer = styled.div`
     img {
       height: 80%;
     }
+
+    button {
+    width: 100%;
+    height: 40px;
+  }
   }
 `
 export const Footer = styled.div`
