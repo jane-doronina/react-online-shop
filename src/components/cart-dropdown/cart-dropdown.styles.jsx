@@ -17,6 +17,10 @@ export const CartDropdownContainer = styled.div`
   h4, p {
     text-align: center;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 100vw;
+  }
 `
 
 export const CartItems = styled.div`

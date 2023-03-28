@@ -21,8 +21,8 @@ const CartDropdown = () => {
 
   return (
     <CartDropdownContainer>
-      <h4>YOUR SHOPPING BAG ({quantity})</h4>
-      <Subheading><strong>Free returns + free shipping</strong> over 50 GBP </Subheading>
+      <h4>YOUR SHOPPING BAG ({quantity} items)</h4>
+      <Subheading><strong>Free returns + free shipping</strong> over £50 </Subheading>
       <CartItems>
        {cartItems.length ? (
         cartItems.map((cartItem) => <CartItem key={cartItem.id} cartItem={cartItem}/>)
