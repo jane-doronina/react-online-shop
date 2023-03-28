@@ -5,9 +5,9 @@ const Ticker = () => {
   return(
     <TickerWrap>
       <TickerMWrap>
-        <TickerItem><strong>FREE STANDARD UK DELIVERY</strong> ON ORDERS ABOVE £50</TickerItem>
-        <TickerItem><LinkWithHover to="/shop/womens" color="white"><strong>JEANS AND TROUSERS</strong></LinkWithHover> – <strong>30% OFF.</strong> 2 DAYS ONLY</TickerItem>
-        <TickerItem>STUDENTS GET <strong>20% OFF EVERYTHING</strong></TickerItem>
+        <TickerItem><p><span>FREE STANDARD UK DELIVERY</span> ON ORDERS ABOVE £50</p></TickerItem>
+        <TickerItem><p><LinkWithHover to="/shop/womens" color="white"><span>JEANS AND TROUSERS</span></LinkWithHover> – <span>30% OFF.</span> 2 DAYS ONLY</p></TickerItem>
+        <TickerItem><p>STUDENTS GET <span>20% OFF EVERYTHING</span></p></TickerItem>
       </TickerMWrap>
     </TickerWrap>
   )

@@ -53,9 +53,21 @@ export const TickerItem = styled.div`
   padding: 10px;
   text-align: center;
 
+  p, a {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  span {
+    font-weight: 600;
+  }
+
   @media screen and (max-width: 600px) {
     width: 150%;
     padding: 7px;
-    font-size: 0.9rem;
+
+    p, a {
+      font-size: 0.9rem;
+    }
   }
 `
