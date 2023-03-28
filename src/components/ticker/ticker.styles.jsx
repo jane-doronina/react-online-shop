@@ -26,7 +26,7 @@ const tickerAnimationMobile = keyframes`
   }
   100% {
     -webkit-transform: translateX(-300%);
-    transform: translateX(-420%);
+    transform: translateX(-300%);
   }
 `
 
@@ -52,6 +52,7 @@ export const TickerItem = styled.div`
   width: 50%;
   padding: 10px;
   text-align: center;
+  display: inline-block;
 
   p, a {
     margin: 0;
@@ -63,11 +64,11 @@ export const TickerItem = styled.div`
   }
 
   @media screen and (max-width: 600px) {
-    width: 150%;
+    width: 100%;
     padding: 7px;
 
     p, a {
-      font-size: 0.9rem;
+      font-size: 0.8rem;
     }
   }
 `
