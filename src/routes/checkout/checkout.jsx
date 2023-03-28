@@ -21,7 +21,7 @@ const Checkout = () => {
       <h3>Your shopping bag</h3>
       {cartItems.map((item) => <CheckoutItem key={item.id} checkoutItem={item}/>)}
       <TotalPrice>
-        <span>TOTAL: {cartTotal} GBP</span>
+        <span>TOTAL: £{cartTotal}</span>
       </TotalPrice>
       <PaymentForm />
     </CheckoutContainer>

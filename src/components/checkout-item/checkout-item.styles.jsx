@@ -9,6 +9,18 @@ export const CheckoutItemContainer = styled.div`
 
   img {
     width: 100%;
+    height: 213px;
+    object-fit: cover;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+
+    img {
+      width: 20%;
+      height: 90px;
+      object-fit: cover;
+    }
   }
 `
 

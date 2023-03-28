@@ -16,5 +16,9 @@ export const SignUpFormContainer = styled.div`
     h2, span {
       text-align: center;
     }
+
+    button {
+      min-width: 254px;
+    }
   }
 `
