@@ -11,6 +11,10 @@ body {
   position: relative;
   min-height: 100vh;
   // padding: 20px 40px;
+
+  @media screen and (max-width: 600px) {
+    padding-bottom: 280px;
+  }
 }
 
 code {

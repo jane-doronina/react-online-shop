@@ -10,6 +10,11 @@ export const FooterContainer = styled.div`
   color: white;
   padding: 20px 40px;
   display: flex;
+
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    height: 280px;
+  }
 `
 
 export const LinkWithHover = styled(Link)`
@@ -44,8 +49,23 @@ export const LinksContainer = styled.div`
     list-style: none;
     line-height: 1.5;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+    border-top: 1px solid white;
+    border-left: none;
+
+    ul {
+      columns: 2;
+      padding-left: 0;
+    }
+  }
 `
 
 export const TextContainer = styled.div`
   width: 65%;
+
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
 `

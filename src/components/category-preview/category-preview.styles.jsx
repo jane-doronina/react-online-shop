@@ -13,9 +13,19 @@ export const ProductsContainer = styled.div`
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 15px;
   row-gap: 20px;
+
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
 `
 
 export const Title = styled(Link)`
-  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
   cursor: pointer;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.1rem;
+  }
 `;
