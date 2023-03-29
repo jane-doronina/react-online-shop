@@ -22,10 +22,15 @@ export const ProductsContainer = styled.div`
 export const Title = styled(Link)`
   text-align: center;
   text-transform: uppercase;
-  font-size: 1.5rem;
   cursor: pointer;
 
+  h2 {
+    font-size: 2.3rem;
+  }
+
   @media screen and (max-width: 600px) {
-    font-size: 1.1rem;
+    h2 {
+      font-size: 1.3rem;
+    }
   }
 `;

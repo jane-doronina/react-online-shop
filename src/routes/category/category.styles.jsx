@@ -15,5 +15,9 @@ export const CategoryContainer = styled.div`
 export const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.3rem;
+  }
 `
