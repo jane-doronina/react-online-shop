@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth } from "../../utils/firebase/firebase";
+import { useNavigate } from "react-router-dom";
+import { createAuthUserWithEmailAndPassword, createUserDocumentFromAuth, signInAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase";
 import InputField from "../form-input/form-input";
 import Button from "../button/button";
 import { SignUpFormContainer } from "./sign-up-form.styles";
@@ -14,6 +15,7 @@ const defaultFormFields = {
 const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword} = formFields;
+  const navigate = useNavigate();
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -30,7 +32,9 @@ const SignUpForm = () => {
     try {
       const { user } = await createAuthUserWithEmailAndPassword(email, password);
       await createUserDocumentFromAuth(user, { displayName });
+      await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
+      navigate("/shop");
     } catch(error) {
       if(error.code === "auth/email-already-in-use") {
         alert("Email already in use")

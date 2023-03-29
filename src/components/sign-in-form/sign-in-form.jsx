@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { signInWithGooglePopup, signInAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase";
 import Button, { BUTTON_TYPE_CLASSES } from "../button/button";
 import InputField from "../form-input/form-input";
@@ -14,12 +15,15 @@ const SignInForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { email, password } = formFields;
 
+  const navigate = useNavigate();
+
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   }
 
   const logGoogleUser = async () => {
     await signInWithGooglePopup();
+    navigate("/shop");
   }
 
   const handleChange = (event) => {
@@ -33,6 +37,7 @@ const SignInForm = () => {
     try {
       await signInAuthUserWithEmailAndPassword(email, password);
       resetFormFields();
+      navigate("/shop");
     } catch(error) {
       if(error.code === "auth/wrong-password") {
         alert("Incorrect password");
