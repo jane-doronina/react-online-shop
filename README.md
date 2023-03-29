@@ -19,11 +19,16 @@ Users should be able to:
 
 #### Desktop
 
-| ![](public/mclub-shop-screenshot1-desktop.png)  | ![](public/mclub-shop-screenshot2-desktop.png)  |
-| ![](public/mclub-shop-screenshot3-desktop.png)  | ![](public/mclub-shop-screenshot4-desktop.png)  |
+| Desktop | Desktop |
+| ----------- | ----------- |
+| ![](public/mclub-shop-screenshot1-desktop.png)   | ![](public/mclub-shop-screenshot2-desktop.png) |
+| ![](public/mclub-shop-screenshot3-desktop.png)   | ![](public/mclub-shop-screenshot4-desktop.png) |
+
 
 #### Mobile
 
+| Mobile | Mobile | Mobile | Mobile |
+| :------ | :------ | :------ | :------ |
 | ![](public/mclub-shop-screenshot1-mobile.png)  | ![](public/mclub-shop-screenshot2-mobile.png)  | ![](public/mclub-shop-screenshot3-mobile.png)  | ![](public/mclub-shop-screenshot4-mobile.png)  |
 
 
