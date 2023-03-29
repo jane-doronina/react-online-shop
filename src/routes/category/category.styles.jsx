@@ -15,5 +15,5 @@ export const CategoryContainer = styled.div`
 export const Title = styled.h2`
   text-transform: uppercase;
   text-align: center;
-  margin-top: 20px;
+  font-size: 2.5rem;
 `
